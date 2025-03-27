@@ -32,7 +32,6 @@ async fn main() -> anyhow::Result<()> {
         max_retries: 10,
         max_delay_ms: 30_000,
         base_delay_ms: 1_000,
-        reset_retries_min_ms: 30_000,
     };
 
     let jetstream = JetstreamConnector::new(config)?;
